@@ -1,9 +1,33 @@
-.card{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(249,249,255);
-    transition: all 0.3s ease 0s;
-    &:hover{
-        background-color: white;
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 255);
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: white;
+  }
+  &__text {
+    position: relative;
+    &__price {
+      position: absolute;
+      top: -34px;
+      right: 15px;
+      z-index: 2;
+      color: #002347;
+      display: inline-block;
+      height: 65px;
+      line-height: 65px;
+      width: 65px;
+      text-align: center;
+      border-radius: 50px;
+      background: #fdc632;
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
     }
+  }
 }

@@ -25,11 +25,11 @@ const CourseCards: React.FC<cardProps> = ({
   <div className={style.card}>
     <div className={style.card__img}>
       <img src={img} alt="this is image" />
-      <div className={style.card__img__price}>
-        <p>${price}</p>
-      </div>
     </div>
     <div className={style.card__text}>
+      <div className={style.card__text__price}>
+        <p>${price}</p>
+      </div>
       <Button
         type="primary"
         style={{ borderRadius: "0", backgroundColor: "rgb(0,35,71)" }}
