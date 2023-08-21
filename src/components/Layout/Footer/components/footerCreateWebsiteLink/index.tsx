@@ -1,0 +1,2 @@
+import FooterCreateWebsiteLink from "@/components/Layout/Footer/components/footerCreateWebsiteLink/footerCreateWebsiteLink"
+export default FooterCreateWebsiteLink;
