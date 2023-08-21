@@ -1,14 +1,11 @@
-import style from "@/components/Layout/Header/heade.module.scss"
+import style from "@/components/Layout/Header/heade.module.scss";
 
 import { useContext } from "react";
-import {
-    BarsOutlined
-  } from '@ant-design/icons';
+import { BarsOutlined } from "@ant-design/icons";
 
 // ---------------------------------------------------
 
-
-import { MyContext } from "@/utils/context/myContext"
+import { MyContext } from "@/utils/context/myContext";
 
 // ---------------------------------------------------
 
@@ -23,7 +20,6 @@ function Header(props: HeaderProps) {
 
   // ---------------------------------------------------
 
-
   // ---------------------------------------------------
 
   const { dropMenu, setDropMenu } = useContext(MyContext);
@@ -34,15 +30,15 @@ function Header(props: HeaderProps) {
     setDropMenu(dropMenu ? false : true);
   };
 
-
   // ---------------------------------------------------
 
   return (
-    <div className={ isScroll ? style.header_2 : style.header}>
-        <button onClick={() => SidebarFunction()} className={style.buttonMenu}>
-          <BarsOutlined />
-        </button>
-      
+    <div className={isScroll ? style.header_2 : style.header}>
+      <button onClick={() => SidebarFunction()} className={style.buttonMenu}>
+        <BarsOutlined />
+      </button>
+
+      <h1>Header</h1>
     </div>
   );
 }

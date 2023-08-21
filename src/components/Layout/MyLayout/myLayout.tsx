@@ -2,7 +2,7 @@ import { useState, ReactNode, useContext } from "react";
 
 // -------------------------------------------------------------------------------
 
-import style from "@/components/Layout/MineLayout/sass/style.module.scss";
+import style from "@/components/Layout/MyLayout/header.module.scss";
 import { Footer, Header } from "@/components/Layout";
 import { MyContext } from "../../../utils/context/myContext";
 
@@ -36,7 +36,7 @@ function Layout(props: TypeLayoutChild) {
       <div className={style.pages} onScroll={changeScroll}>
         {children}
       </div>
-      <Footer />
+      <Footer data="l" />
     </div>
   );
 }
