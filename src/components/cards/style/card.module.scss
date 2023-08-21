@@ -1,0 +1,10 @@
+.card {
+  &__text {
+    position: relative;
+    &__price {
+      position: absolute;
+      top: 0;
+      background-color: red;
+    }
+  }
+}

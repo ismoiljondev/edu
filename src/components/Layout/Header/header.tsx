@@ -2,11 +2,7 @@ import style from "@/components/Layout/Header/heade.module.scss"
 
 import { useContext } from "react";
 import {
-    MenuFoldOutlined,
-    MenuUnfoldOutlined,
-    UploadOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
+    BarsOutlined
   } from '@ant-design/icons';
 
 // ---------------------------------------------------
@@ -44,7 +40,7 @@ function Header(props: HeaderProps) {
   return (
     <div className={ isScroll ? style.header_2 : style.header}>
         <button onClick={() => SidebarFunction()} className={style.buttonMenu}>
-          <FaBars />
+          <BarsOutlined />
         </button>
       
     </div>
