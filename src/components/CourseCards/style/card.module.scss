@@ -1,0 +1,9 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249,249,255);
+    transition: all 0.3s ease 0s;
+    &:hover{
+        background-color: white;
+    }
+}
