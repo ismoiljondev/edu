@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Card } from "antd";
 import style from "./style/card.module.scss";
 import { TfiUser } from "react-icons/tfi";
-import {AiOutlineHeart} from 'react-icons/ai'
+import { AiOutlineHeart } from "react-icons/ai";
 interface cardProps {
   img?: string;
   price?: number;
@@ -30,20 +30,26 @@ const CourseCards: React.FC<cardProps> = ({
       <div className={style.card__text__price}>
         <p>${price}</p>
       </div>
-      <Button
-        type="primary"
-        style={{ borderRadius: "0", backgroundColor: "rgb(0,35,71)" }}
-      >
-        {buttonText}
-      </Button>
-      <h1>{title}</h1>
+      <div>
+        <Button
+          type="primary"
+          style={{
+            borderRadius: "0",
+            backgroundColor: "#002347",
+            margin: "8px 0",
+          }}
+        >
+          {buttonText}
+        </Button>
+      </div>
+      <h3>{title}</h3>
       <p>{desc}</p>
       <div className={style.card__text__user}>
         <div className={style.card__text__user__main}>
           <div className={style.card__text__user__main__img}>
             <img src={userImage} />
           </div>
-          <h3>{userName}</h3>
+          <h4>{userName}</h4>
         </div>
         <div className={style.card__text__user__likes}>
           <span>

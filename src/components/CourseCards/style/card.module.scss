@@ -1,13 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+$main_color: #fdc632;
 .card {
   display: flex;
   flex-direction: column;
   background-color: rgb(249, 249, 255);
   transition: all 0.3s ease 0s;
+  &__img {
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
   &:hover {
+    .card__img {
+      width: 100%;
+      overflow: hidden;
+    }
+    h3 {
+      color: $main_color;
+    }
+    box-shadow: 0 0 8px 2px rgb(203, 201, 201);
     background-color: white;
+    .card__text__price {
+      background-color: #002347;
+      p {
+        color: #fdc632;
+      }
+    }
+    .card__img {
+      overflow: hidden;
+      img {
+        transform: scale(1.1);
+      }
+    }
   }
   &__text {
+    padding: 30px 26px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h3 {
+      color: #212529;
+      text-align: left;
+      transition: all 0.3s ease-in-out;
+    }
+    p {
+      color: #7b838a;
+    }
+    &__user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__main {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
     &__price {
       position: absolute;
       top: -34px;
@@ -28,6 +79,9 @@
       -moz-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s;
+      p {
+        color: #002347;
+      }
     }
   }
 }
