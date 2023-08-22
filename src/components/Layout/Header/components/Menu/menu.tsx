@@ -12,7 +12,6 @@ type menuPtopsType = {
 
 function Menu(props: menuPtopsType) {
   const { data } = props;
-  console.log(data);
 
   return (
     <div className={style.menu}>

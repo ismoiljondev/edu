@@ -6,9 +6,10 @@
   font-weight: 600;
   font-family: Rubik, sans-serif;
   color: #002347;
+  transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .menu {
     padding: 10px 0;
     width: 100%;

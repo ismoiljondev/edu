@@ -1,25 +1,25 @@
 import style from "@/components/Layout/Header/heade.module.scss";
 
-import { useContext, useState } from "react";
-import { BarsOutlined } from "@ant-design/icons";
-import { SearchOutlined, ExpandOutlined } from "@ant-design/icons";
+import { useState } from "react";
+import { SearchOutlined, MenuOutlined, CloseOutlined } from "@ant-design/icons";
 
 // ---------------------------------------------------
 
-import { MyContext } from "@/utils/context/myContext";
 import Menu from "@/components/Layout/Header/components/Menu";
-import { HeaderRouteData } from "./headerData";
+import { HeaderRouteData } from "@/components/Layout/Header/headerData";
+import Link from "next/link";
 
 // ---------------------------------------------------
 
 type HeaderProps = {
   isScroll: boolean;
+  navType: boolean;
 };
 
 // ---------------------------------------------------
 
 function Header(props: HeaderProps) {
-  const { isScroll } = props;
+  const { isScroll, navType } = props;
 
   // ---------------------------------------------------
 
@@ -39,27 +39,42 @@ function Header(props: HeaderProps) {
 
   // ---------------------------------------------------
 
+  // ---------------------------------------------------
+
   return (
-    <div className={isScroll ? style.header_2 : style.header}>
+    <div
+      className={
+        isScroll
+          ? navType
+            ? style.header_2
+            : style.header_2_blue
+          : style.header
+      }
+    >
       <div className={dropSearch ? style.search_box_2 : style.search_box}>
-        <form action="">
-          <input type="search" name="" id="" />
-        </form>
+        <input type="search" name="" id="" placeholder="Search Here" />
         <button className={style.search_button} onClick={() => dropSearchFu()}>
-          <ExpandOutlined />
+          <CloseOutlined />
         </button>
       </div>
       <div className={style.navbar}>
         <div className={style.logo}>
-          <img src="/media/logo.png.webp" alt="logo" />
+          <Link href={"/"}>
+            <img
+              src={navType ? "/media/logo.png.webp" : "/media/logo2.png.webp"}
+              alt="logo"
+            />
+          </Link>
         </div>
-        <button onClick={() => SidebarFunction()} className={style.buttonMenu}>
-          <BarsOutlined />
+
+        <button onClick={() => SidebarFunction()} className={style.button_Menu}>
+          {dropMenu ? <CloseOutlined /> : <MenuOutlined />}
         </button>
+
         <div className={dropMenu ? style.menu_2 : style.menu}>
           <Menu data={HeaderRouteData.dataUrl} />
           <button
-            className={style.search_button}
+            className={style.search_button2}
             onClick={() => dropSearchFu()}
           >
             <SearchOutlined />
