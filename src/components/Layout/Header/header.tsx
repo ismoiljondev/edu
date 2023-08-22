@@ -38,7 +38,9 @@ function Header(props: HeaderProps) {
   };
 
   // ---------------------------------------------------
-
+  function OnSubmit(e: any) {
+    e.preventDefault();
+  }
   // ---------------------------------------------------
 
   return (
@@ -51,12 +53,17 @@ function Header(props: HeaderProps) {
           : style.header
       }
     >
-      <div className={dropSearch ? style.search_box_2 : style.search_box}>
+      <form
+        action=""
+        onSubmit={(e) => OnSubmit(e)}
+        className={dropSearch ? style.search_box_2 : style.search_box}
+      >
         <input type="search" name="" id="" placeholder="Search Here" />
         <button className={style.search_button} onClick={() => dropSearchFu()}>
           <CloseOutlined />
         </button>
-      </div>
+      </form>
+
       <div className={style.navbar}>
         <div className={style.logo}>
           <Link href={"/"}>

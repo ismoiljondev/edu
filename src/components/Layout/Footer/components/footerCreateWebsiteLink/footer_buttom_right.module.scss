@@ -1,15 +1,12 @@
 .footer_buttom_right {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   ol {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     li {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
       gap: 4px;
       color: white;
       a {

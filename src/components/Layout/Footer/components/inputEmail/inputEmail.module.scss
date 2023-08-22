@@ -1,0 +1,56 @@
+.inputEmail {
+  padding: 3px;
+  background-color: red;
+  font-weight: 300;
+  background: #334f6c;
+  font-size: 14px;
+  padding: 4px;
+  padding-left: 20px;
+  width: 300px;
+  form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    input {
+      width: 100%;
+      padding: 4px;
+      border: none;
+      color: #ffffff;
+      height: 30px;
+      background-color: transparent;
+      outline: none;
+    }
+    button {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: -15%;
+      padding: 0px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fdc632;
+      background-size: 200% auto;
+      color: #002347;
+      border-radius: 0;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      padding: 8px 20px;
+      margin-left: -60px;
+      font-size: 12px;
+      text-transform: uppercase;
+      border: 0;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .inputEmail {
+    width: 90%;
+  }
+}
