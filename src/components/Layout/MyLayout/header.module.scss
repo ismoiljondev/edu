@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .layout {
   max-height: 100vh;
   overflow-y: scroll;
+  font-family: "Roboto", sans-serif;
 }
 .pages {
-  padding: 10px 8%;
+  padding: 10px 10%;
 }

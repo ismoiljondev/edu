@@ -55,105 +55,105 @@ const footerRouteData: Footer_route_data_type = {
   Footer_links_page: [
     {
       id: "li0",
-      categories: "Company",
+      categories: "Top Products",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Managed Website",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Manage Reputation",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Power Tools",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Marketing Service",
         },
       ],
     },
     {
       id: "li0",
-      categories: "Company",
+      categories: "Quick Links",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Jobs",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Brand Assets",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Investor Relations",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Terms of Service",
         },
       ],
     },
     {
       id: "li0",
-      categories: "Company",
+      categories: "Features",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Jobs",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Brand Assets",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Investor Relations",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Terms of Service",
         },
       ],
     },
     {
       id: "li0",
-      categories: "Company",
+      categories: "Resources",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Guides",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Research",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Experts",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Agencies",
         },
       ],
     },

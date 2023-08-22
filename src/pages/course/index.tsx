@@ -1,6 +1,6 @@
-import Cards from '@/components/cards/Cards';
-import React from 'react'
-const Course:React.FC = () => {
+import Cards from "@/components/cards/Cards";
+import React from "react";
+const Course: React.FC = () => {
   return (
     <div>
       <Cards
@@ -13,6 +13,6 @@ meat over sea"
       />
     </div>
   );
-}
+};
 
 export default Course;
