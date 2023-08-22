@@ -1,5 +1,14 @@
 .link {
+  display: inline-block;
+
   &:hover {
     color: #fdc632;
+  }
+}
+@media (max-width: 768px) {
+  .link {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
   }
 }

@@ -1,7 +1,8 @@
 import style from "@/components/Layout/Header/heade.module.scss";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { BarsOutlined } from "@ant-design/icons";
+import { SearchOutlined, ExpandOutlined } from "@ant-design/icons";
 
 // ---------------------------------------------------
 
@@ -24,25 +25,47 @@ function Header(props: HeaderProps) {
 
   // ---------------------------------------------------
 
-  const { dropMenu, setDropMenu } = useContext(MyContext);
+  const [dropMenu, setDropMenu] = useState<boolean>(false);
+  const [dropSearch, setDropSearch] = useState<boolean>(false);
 
   // ---------------------------------------------------
 
   const SidebarFunction = () => {
-    setDropMenu(dropMenu ? false : true);
+    setDropMenu(!dropMenu);
+  };
+  const dropSearchFu = () => {
+    setDropSearch(!dropSearch);
   };
 
   // ---------------------------------------------------
 
   return (
     <div className={isScroll ? style.header_2 : style.header}>
-      <div>
-        <img src="/media/logo.png.webp" alt="logo" />
+      <div className={dropSearch ? style.search_box_2 : style.search_box}>
+        <form action="">
+          <input type="search" name="" id="" />
+        </form>
+        <button className={style.search_button} onClick={() => dropSearchFu()}>
+          <ExpandOutlined />
+        </button>
       </div>
-      <button onClick={() => SidebarFunction()} className={style.buttonMenu}>
-        <BarsOutlined />
-      </button>
-      <Menu data={HeaderRouteData.dataUrl} />
+      <div className={style.navbar}>
+        <div className={style.logo}>
+          <img src="/media/logo.png.webp" alt="logo" />
+        </div>
+        <button onClick={() => SidebarFunction()} className={style.buttonMenu}>
+          <BarsOutlined />
+        </button>
+        <div className={dropMenu ? style.menu_2 : style.menu}>
+          <Menu data={HeaderRouteData.dataUrl} />
+          <button
+            className={style.search_button}
+            onClick={() => dropSearchFu()}
+          >
+            <SearchOutlined />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

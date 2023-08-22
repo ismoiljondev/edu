@@ -1,5 +1,6 @@
 import style from "@/components/Layout/Header/components/menu/menu.module.scss";
 import LinkMenu from "@/components/Layout/Header/components/LinkMenu";
+
 type Header_route_Data_type = {
   id: number;
   name: string;
