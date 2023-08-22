@@ -1,3 +1,9 @@
+import {
+  DribbbleSquareFilled,
+  FacebookFilled,
+  TwitterSquareFilled,
+  LinkedinFilled,
+} from "@ant-design/icons";
 type Footer_links_page_data_type = {
   id: number;
   url?: string;
@@ -15,7 +21,7 @@ type Footer_links_page_type = {
 type Footer_net_links_type = {
   id: number;
   url: string;
-  icon: string;
+  icon: React.ReactElement;
 }[];
 
 // -------------------------------------------------------------------------------
@@ -163,22 +169,26 @@ const footerRouteData: Footer_route_data_type = {
     {
       id: 0,
       url: "/",
-      icon: "/img/Instagram_icon.png",
+      icon: <FacebookFilled style={{ color: "inherit", fontSize: "40px" }} />,
     },
     {
       id: 1,
       url: "/",
-      icon: "/img/Twitch_icon.png",
+      icon: (
+        <TwitterSquareFilled style={{ color: "inherit", fontSize: "40px" }} />
+      ),
     },
     {
       id: 2,
       url: "/",
-      icon: "/img/Facebook_icon.png",
+      icon: (
+        <DribbbleSquareFilled style={{ color: "inherit", fontSize: "40px" }} />
+      ),
     },
     {
       id: 2,
       url: "/",
-      icon: "/img/Facebook_icon.png",
+      icon: <LinkedinFilled style={{ color: "inherit", fontSize: "40px" }} />,
     },
   ],
   // -------------------------------------------------------------------------------

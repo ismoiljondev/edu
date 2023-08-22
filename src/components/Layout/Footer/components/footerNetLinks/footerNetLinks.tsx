@@ -21,9 +21,7 @@ function FooterNetLinks(props: PropsType) {
         {data.map((net) => {
           return (
             <li key={net.id}>
-              <Link href={net.url}>
-                <img src={net.icon} alt="icon" />
-              </Link>
+              <Link href={net.url}>{net.icon}</Link>
             </li>
           );
         })}
