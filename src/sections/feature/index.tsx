@@ -13,8 +13,9 @@ const Feature: React.FC = () => {
           md={12}
           lg={8}
           style={{ justifyContent: "stretch", alignItems: "stretch" }}
+          key={e?.id}
         >
-          <FeatureCard {...e} key={e?.id} />
+          <FeatureCard {...e} />
         </Col>
       ))}
     </Trainers>

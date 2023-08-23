@@ -7,8 +7,8 @@ const Events: React.FC = () => {
   return (
     <Row gutter={[16, 16]} style={{ justifyContent: "center" }}>
       {eventElement?.map((e) => (
-        <Col xs={24} sm={24} md={12} xl={12}>
-          <EventsCard {...e} key={e?.id} />
+        <Col xs={24} sm={24} md={12} xl={12} key={e?.id}>
+          <EventsCard {...e} />
         </Col>
       ))}
     </Row>

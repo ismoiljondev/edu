@@ -8,8 +8,8 @@ const Course: React.FC = () => {
   return (
     <Swipper three={3}>
       {cardElement?.map((e) => (
-        <SwiperSlide>
-          <CourseCards {...e} key={e?.id} />
+        <SwiperSlide key={e?.id}>
+          <CourseCards {...e} />
         </SwiperSlide>
       ))}
     </Swipper>
