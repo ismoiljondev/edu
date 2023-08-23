@@ -1,6 +1,9 @@
-import { Client, Course, Events, Feature, Trainer } from "@/sections";
 import Head from "next/head";
+
 import style from "../styles/style.module.scss";
+import Showcase from "@/components/Showcase";
+import ShowcaseData from "@/components/Showcase/showData";
+import { Client, Course, Events, Feature, Trainer } from "@/sections";
 export default function Home() {
   return (
     <>
@@ -10,28 +13,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={style.elements}>
-        <div className={style.feature}>
-          <div className={style.container}>
-            <div className={style.container__title}>
-              <h2>Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-            <Feature />
+      <div className={style.container}>
+        <Showcase data={ShowcaseData} />
+        <div>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
           </div>
+          <Feature />
         </div>
         <div>
-          <div className={style.container}>
-            <div className={style.container__title}>
-              <h2>Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-            <Course />
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
           </div>
+          <Course />
         </div>
         <div className={style.form}>
           <div className={style.container}>
@@ -82,39 +78,34 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <form action="#">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </form>
         </div>
         <div>
-          <div className={style.container}>
-            <div className={style.container__title}>
-              <h2>Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-            <Trainer />
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
           </div>
+          <Trainer />
         </div>
-        <div className={style.events}>
-          <div className={style.container}>
-            <div className={style.container__title}>
-              <h2>Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-            <Events />
+        <div className={style.container__events}>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
           </div>
+          <Events />
         </div>
-        <div className={style.clients}>
-          <div className={style.container}>
-            <div className={style.container__title}>
-              <h2>Awesome Feature</h2>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
-            </div>
-            <Client />
+        <div>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
           </div>
+          <Client />
         </div>
       </div>
     </>
