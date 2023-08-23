@@ -3,6 +3,7 @@ import Head from "next/head";
 import style from "../styles/style.module.scss";
 import Showcase from "@/components/Showcase";
 import ShowcaseData from "@/components/Showcase/showData";
+import { Client, Course, Events, Feature, Trainer } from "@/sections";
 export default function Home() {
   return (
     <>
