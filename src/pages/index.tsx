@@ -1,6 +1,7 @@
 import { Client, Course, Events, Feature, Trainer } from "@/sections";
 import Head from "next/head";
 import style from "../styles/style.module.scss";
+import Showcase from "@/components/Showcase";
 export default function Home() {
   return (
     <>
