@@ -11,9 +11,10 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 interface swiperProps {
   children: ReactNode;
+  three?: number;
 }
 
-export default function Swipper({ children }: swiperProps) {
+export default function Swipper({ children, three }: swiperProps) {
   return (
     <>
       <Swiper
@@ -25,7 +26,7 @@ export default function Swipper({ children }: swiperProps) {
         //   clickable: true,
         // }}
         autoplay={{
-          delay: 2000,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -37,8 +38,8 @@ export default function Swipper({ children }: swiperProps) {
             slidesPerView: 2,
             spaceBetween: 40,
           },
-          1024: {
-            slidesPerView: 3,
+          1490: {
+            slidesPerView: three,
             spaceBetween: 50,
           },
         }}

@@ -8,7 +8,7 @@ export const MyContext = createContext<{
   setDropMenu: () => {},
 });
 
-export const ContextProvoderTwo: React.FC<{ children: React.ReactNode }> = ({
+export const ContextProvoder: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [dropMenu, setDropMenu] = useState(true);

@@ -1,0 +1,19 @@
+.card {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .card {
+    grid-template-columns: 1fr;
+    img {
+      width: auto;
+    }
+  }
+}

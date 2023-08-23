@@ -1,0 +1,10 @@
+.link_direction {
+  a {
+    color: rgba(255, 255, 255, 0.45);
+    border-bottom: 1px solid transparent;
+    &:hover {
+      color: white;
+      border-color: white;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  font-family: Rubik, sans-serif;
+  color: #002347;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 10px 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

@@ -22,21 +22,25 @@ function Layout(props: TypeLayoutChild) {
   const { dropMenu, setDropMenu } = useContext(MyContext);
 
   const changeScroll = (e: any) => {
-    setIsScroll(e.target.scrollTop > 10);
+    setIsScroll(e.target.scrollTop > 250);
   };
 
   const SidebarFunction = () => {
     setDropMenu(dropMenu ? false : true);
-    console.log(dropMenu);
   };
 
   return (
-    <div className={style.layout}>
+    <div className={style.layout} onScroll={changeScroll}>
       <Header isScroll={isScroll} />
+
+      <button
+        className={dropMenu ? style.buttontwo_res : style.buttontwo}
+        onClick={() => SidebarFunction()}
+      ></button>
       <div className={style.pages} onScroll={changeScroll}>
         {children}
       </div>
-      <Footer data="l" />
+      <Footer />
     </div>
   );
 }

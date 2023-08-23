@@ -36,16 +36,6 @@ const cardElement = [
     buttonText: "DESIGN",
   },
   {
-    id: 4,
-    img: "/media/second.webp",
-    price: 25,
-    title: "Social Media Network",
-    desc: "One make creepeth man bearing their one firmament won't fowlmeat over sea",
-    userImage: "/media/user.webp",
-    userName: "Cameron",
-    buttonText: "DESIGN",
-  },
-  {
     id: 5,
     img: "/media/first.webp",
     price: 25,
@@ -55,10 +45,30 @@ const cardElement = [
     userName: "Cameron",
     buttonText: "DESIGN",
   },
+  {
+    id: 4,
+    img: "/media/second.webp",
+    price: 25,
+    title: "Social Media Network",
+    desc: "One make creepeth man bearing their one firmament won't fowlmeat over sea",
+    userImage: "/media/user2.webp",
+    userName: "Cameron",
+    buttonText: "DESIGN",
+  },
+  {
+    id: 3,
+    img: "/media/third.webp",
+    price: 25,
+    title: "Social Media Network",
+    desc: "One make creepeth man bearing their one firmament won't fowlmeat over sea",
+    userImage: "/media/user3.webp",
+    userName: "Cameron",
+    buttonText: "DESIGN",
+  },
 ];
 const Course: React.FC = () => {
   return (
-    <Swipper>
+    <Swipper three={3}>
       {cardElement?.map((e) => (
         <SwiperSlide>
           <CourseCards {...e} key={e?.id} />
