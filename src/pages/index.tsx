@@ -5,6 +5,8 @@ import style from "../styles/style.module.scss";
 import Trainer from "./trainer";
 import Events from "./events";
 import Client from "./clients";
+import Showcase from "@/components/Showcase";
+import ShowcaseData from "@/components/Showcase/showData";
 export default function Home() {
   return (
     <>
@@ -15,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.container}>
+        <Showcase data={ShowcaseData} />
         <div>
           <div className={style.container__title}>
             <h1>Awesome Feature</h1>
