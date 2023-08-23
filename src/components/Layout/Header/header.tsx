@@ -84,7 +84,9 @@ function Header(props: HeaderProps) {
             className={style.search_button2}
             onClick={() => dropSearchFu()}
           >
-            <SearchOutlined />
+            <SearchOutlined
+              style={navType ? { color: "#002347" } : { color: "white" }}
+            />
           </button>
         </div>
       </div>
