@@ -1,10 +1,6 @@
+import { Client, Course, Events, Feature, Trainer } from "@/sections";
 import Head from "next/head";
-import Feature from "./feature";
-import Course from "./course";
 import style from "../styles/style.module.scss";
-import Trainer from "./trainer";
-import Events from "./events";
-import Client from "./clients";
 export default function Home() {
   return (
     <>
@@ -18,7 +14,7 @@ export default function Home() {
         <div className={style.feature}>
           <div className={style.container}>
             <div className={style.container__title}>
-              <h1>Awesome Feature</h1>
+              <h2>Awesome Feature</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -29,7 +25,7 @@ export default function Home() {
         <div>
           <div className={style.container}>
             <div className={style.container__title}>
-              <h1>Awesome Feature</h1>
+              <h2>Awesome Feature</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -39,25 +35,58 @@ export default function Home() {
         </div>
         <div className={style.form}>
           <div className={style.container}>
-            <div className={style.container__title}>
-              <h1>Awesome Feature</h1>
-              <p>
-                Replenish man have thing gathering lights yielding shall you
-              </p>
+            <div className={style.form__box}>
+              <div className={style.form__left}>
+                <div className={style.form__left__text}>
+                  <h2>Register Now</h2>
+                  <p>
+                    There is a moment in the life of any aspiring astronomer
+                    that it is time to buy that first telescope. It’s exciting
+                    to think about setting up your own viewing station.
+                  </p>
+                </div>
+                <div className={style.form__left__cards}>
+                  <div className={style.form__left__cards__card}>
+                    <h2>150</h2>
+                    <p>Days</p>
+                  </div>
+                  <div className={style.form__left__cards__card}>
+                    <h2>23</h2>
+                    <p>Hours</p>
+                  </div>
+                  <div className={style.form__left__cards__card}>
+                    <h2>47</h2>
+                    <p>Mins</p>
+                  </div>
+                  <div className={style.form__left__cards__card}>
+                    <h2>59</h2>
+                    <p>Seconds</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.form__right}>
+                <form action="#">
+                  <h3>Courses for Free</h3>
+                  <p>It is high time for learning</p>
+                  <div className={style.form__card}>
+                    <div>
+                      <input type="text" placeholder="Your Name" />
+                      <input type="tel" placeholder="Your Phone Number" />
+                      <input type="email" placeholder="Your Email Address" />
+                    </div>
+                    <div className={style.form__btn}>
+                      <button type="submit">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-            <form action="#">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-            </form>
           </div>
         </div>
         <div>
           <div className={style.container}>
             <div className={style.container__title}>
-              <h1>Awesome Feature</h1>
+              <h2>Awesome Feature</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -68,7 +97,7 @@ export default function Home() {
         <div className={style.events}>
           <div className={style.container}>
             <div className={style.container__title}>
-              <h1>Awesome Feature</h1>
+              <h2>Awesome Feature</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
@@ -79,7 +108,7 @@ export default function Home() {
         <div className={style.clients}>
           <div className={style.container}>
             <div className={style.container__title}>
-              <h1>Awesome Feature</h1>
+              <h2>Awesome Feature</h2>
               <p>
                 Replenish man have thing gathering lights yielding shall you
               </p>
