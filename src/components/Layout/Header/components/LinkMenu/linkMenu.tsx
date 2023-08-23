@@ -11,7 +11,7 @@ type linkMenuPropsType = {
 function LinkMenu(props: linkMenuPropsType) {
   const { id, name, url, linkType } = props;
   return (
-    <span className={linkType ? style.link_w : style.link}>
+    <span className={linkType ? style.link : style.link_w}>
       <Link href={url} key={id}>
         {name}
       </Link>
