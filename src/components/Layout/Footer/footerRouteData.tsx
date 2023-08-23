@@ -1,3 +1,9 @@
+import {
+  DribbbleSquareFilled,
+  FacebookFilled,
+  TwitterSquareFilled,
+  LinkedinFilled,
+} from "@ant-design/icons";
 type Footer_links_page_data_type = {
   id: number;
   url?: string;
@@ -15,7 +21,7 @@ type Footer_links_page_type = {
 type Footer_net_links_type = {
   id: number;
   url: string;
-  icon: string;
+  icon: React.ReactElement;
 }[];
 
 // -------------------------------------------------------------------------------
@@ -55,105 +61,105 @@ const footerRouteData: Footer_route_data_type = {
   Footer_links_page: [
     {
       id: "li0",
-      categories: "Company",
+      categories: "Top Products",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Managed Website",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Manage Reputation",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Power Tools",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Marketing Service",
         },
       ],
     },
     {
       id: "li0",
-      categories: "Company",
+      categories: "Quick Links",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Jobs",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Brand Assets",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Investor Relations",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Terms of Service",
         },
       ],
     },
     {
       id: "li0",
-      categories: "Company",
+      categories: "Features",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Jobs",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Brand Assets",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Investor Relations",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Terms of Service",
         },
       ],
     },
     {
       id: "li0",
-      categories: "Company",
+      categories: "Resources",
       data: [
         {
           id: 0,
           url: "/",
-          name: "About",
+          name: "Guides",
         },
         {
           id: 1,
           url: "/",
-          name: "Jobs",
+          name: "Research",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Experts",
         },
         {
           id: 2,
           url: "/",
-          name: "For the Record",
+          name: "Agencies",
         },
       ],
     },
@@ -163,22 +169,26 @@ const footerRouteData: Footer_route_data_type = {
     {
       id: 0,
       url: "/",
-      icon: "/img/Instagram_icon.png",
+      icon: <FacebookFilled style={{ color: "inherit", fontSize: "40px" }} />,
     },
     {
       id: 1,
       url: "/",
-      icon: "/img/Twitch_icon.png",
+      icon: (
+        <TwitterSquareFilled style={{ color: "inherit", fontSize: "40px" }} />
+      ),
     },
     {
       id: 2,
       url: "/",
-      icon: "/img/Facebook_icon.png",
+      icon: (
+        <DribbbleSquareFilled style={{ color: "inherit", fontSize: "40px" }} />
+      ),
     },
     {
       id: 2,
       url: "/",
-      icon: "/img/Facebook_icon.png",
+      icon: <LinkedinFilled style={{ color: "inherit", fontSize: "40px" }} />,
     },
   ],
   // -------------------------------------------------------------------------------

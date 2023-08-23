@@ -17,11 +17,11 @@ type LinkDirectinType = {
 function LinkDirectin(props: LinkDirectinType) {
   const { id, name, url, target } = props;
   return (
-    <div className={style.link_direction}>
+    <span className={style.link_direction}>
       <Link key={id} href={url} target={target}>
         {name}
       </Link>
-    </div>
+    </span>
   );
 }
 

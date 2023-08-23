@@ -1,9 +1,9 @@
-.footer_left {
+.footer_top_right {
   display: flex;
   align-items: flex-start;
   justify-content: start;
-  flex-wrap: wrap;
-  gap: 90px;
+  flex-direction: column;
+  gap: 30px;
   h3 {
     color: white;
     font-weight: 400;
@@ -22,5 +22,6 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
+    color: rgba(255, 255, 255, 0.45);
   }
 }
