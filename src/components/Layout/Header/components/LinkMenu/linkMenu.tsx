@@ -5,16 +5,17 @@ type linkMenuPropsType = {
   id: number;
   name: string;
   url: string;
+  linkType: boolean;
 };
 
 function LinkMenu(props: linkMenuPropsType) {
-  const { id, name, url } = props;
+  const { id, name, url, linkType } = props;
   return (
-    <div className={style.link}>
+    <span className={linkType ? style.link_w : style.link}>
       <Link href={url} key={id}>
         {name}
       </Link>
-    </div>
+    </span>
   );
 }
 

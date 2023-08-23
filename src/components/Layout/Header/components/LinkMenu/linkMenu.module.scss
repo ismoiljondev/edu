@@ -5,8 +5,21 @@
     color: #fdc632;
   }
 }
+.link_w {
+  display: inline-block;
+  color: white;
+  &:hover {
+    color: #fdc632;
+  }
+}
 @media (max-width: 990px) {
   .link {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(191, 191, 191, 0.411);
+    color: white;
+  }
+  .link_w {
     width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid rgba(191, 191, 191, 0.411);
