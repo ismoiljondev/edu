@@ -79,7 +79,7 @@ function Header(props: HeaderProps) {
         </button>
 
         <div className={dropMenu ? style.menu_2 : style.menu}>
-          <Menu data={HeaderRouteData.dataUrl} />
+          <Menu data={HeaderRouteData.dataUrl} menuType={navType} />
           <button
             className={style.search_button2}
             onClick={() => dropSearchFu()}

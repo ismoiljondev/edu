@@ -8,15 +8,18 @@ type Header_route_Data_type = {
 }[];
 type menuPtopsType = {
   data: Header_route_Data_type;
+  menuType: boolean;
 };
 
 function Menu(props: menuPtopsType) {
-  const { data } = props;
+  const { data, menuType } = props;
 
   return (
     <div className={style.menu}>
       {data.map((e) => {
-        return <LinkMenu id={e.id} name={e.name} url={e.url} />;
+        return (
+          <LinkMenu linkType={menuType} id={e.id} name={e.name} url={e.url} />
+        );
       })}
     </div>
   );
