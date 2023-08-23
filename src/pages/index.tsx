@@ -1,10 +1,6 @@
 import Head from "next/head";
-import Feature from "./feature";
-import Course from "./course";
+
 import style from "../styles/style.module.scss";
-import Trainer from "./trainer";
-import Events from "./events";
-import Client from "./clients";
 import Showcase from "@/components/Showcase";
 import ShowcaseData from "@/components/Showcase/showData";
 export default function Home() {
