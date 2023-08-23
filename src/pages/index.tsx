@@ -1,4 +1,10 @@
 import Head from "next/head";
+import Feature from "./feature";
+import Course from "./course";
+import style from "../styles/style.module.scss";
+import Trainer from "./trainer";
+import Events from "./events";
+import Client from "./clients";
 export default function Home() {
   return (
     <>
@@ -8,118 +14,56 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>hello world</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        incidunt error perspiciatis ea eius dolorem asperiores quasi temporibus
-        commodi quo voluptatum, harum earum! Natus harum delectus libero eaque
-        atque, enim, totam officiis rem aperiam placeat quis odio accusamus ex
-        ipsa earum quod? Commodi rem voluptatibus molestiae, omnis iusto eos
-        aperiam enim quibusdam excepturi sunt consequuntur maxime corrupti alias
-        ullam id! Ullam enim tempore quasi accusantium nemo debitis, doloremque
-        nesciunt tenetur ratione architecto dicta dolorem delectus dolores
-        expedita nisi facilis veritatis accusamus ea perferendis beatae
-        provident sint? Dolores, assumenda officiis voluptatem voluptatibus,
-        repellendus atque laboriosam enim, sit reprehenderit odit at ipsam a
-        vitae sunt omnis placeat esse expedita libero nobis magni inventore
-        dolore! Harum commodi molestiae sapiente esse reiciendis excepturi optio
-        aspernatur, dolor nobis, eaque praesentium omnis repudiandae animi
-        dolore deleniti exercitationem impedit odio provident voluptatibus enim
-        quo tempora temporibus. Labore quae cum aliquid voluptas omnis dolorem
-        illum ducimus, facere voluptatem et sed ratione dolorum nemo, culpa
-        asperiores explicabo. Adipisci quam ea delectus asperiores nobis quo
-        obcaecati impedit optio facilis tempore nam, voluptate cum sequi. Facere
-        enim, totam maiores, illo dolor hic aliquid, quia ipsum aliquam impedit
-        asperiores esse odio tempora at voluptas nemo deserunt culpa
-        voluptatibus sed corporis sapiente? Laudantium placeat soluta, quos
-        ullam repellat tenetur nemo voluptatum, ex minus fugiat, dolores maiores
-        tempora? Obcaecati ipsa ad ut, ullam minus nemo illum excepturi maxime
-        repudiandae voluptatibus natus. Voluptatum, illum. Ipsa possimus
-        molestias nihil nobis vitae voluptate laborum deserunt quaerat optio vel
-        dolores laudantium sequi ipsam, illum at voluptas animi, architecto
-        rerum aperiam sapiente odio aut. Assumenda maiores aliquam saepe ipsum
-        molestiae quisquam eaque quos aspernatur quidem odio placeat doloremque
-        culpa hic exercitationem veniam, sint adipisci dicta earum, temporibus,
-        omnis accusamus reprehenderit tempora expedita. Dolores aperiam totam
-        dolore placeat mollitia porro, ut eos repudiandae! Dolor non debitis,
-        cupiditate est error laudantium quam quos veniam, adipisci corporis
-        earum ipsam quod necessitatibus inventore ratione autem eius deserunt
-        saepe. Illum, ducimus saepe vitae itaque qui voluptas id. Optio sed ea
-        maiores deleniti obcaecati deserunt iure laudantium unde, temporibus
-        nihil atque quisquam aliquid cum, quod ad velit. Ratione, ipsum quidem
-        eligendi, eum sit suscipit, quo temporibus placeat maiores deleniti
-        tempore unde! Numquam facilis unde quos suscipit dicta, porro molestias
-        sit corporis dolor nemo optio modi placeat assumenda? Nemo inventore
-        quo, animi, quis perferendis modi sint nobis dolor dolores est molestiae
-        repudiandae reiciendis facilis et harum? Exercitationem accusamus
-        voluptas facere! Sed quisquam tempora adipisci placeat consectetur amet
-        ipsam quibusdam aspernatur commodi, error esse dignissimos aut impedit
-        aliquid minus aliquam laboriosam. Delectus reprehenderit dicta debitis
-        suscipit inventore ipsa sequi unde impedit, commodi tenetur ullam, natus
-        at animi repellendus vel ex dolore eius minima facere architecto
-        nesciunt laudantium recusandae sit numquam! Blanditiis velit consectetur
-        vitae porro, illum obcaecati consequuntur hic, nulla neque modi nobis
-        corrupti quas, odit ex repellendus voluptatibus iste libero ut
-        reiciendis perspiciatis numquam laudantium earum vero? Odio atque
-        repudiandae reiciendis temporibus sunt neque recusandae dolores rerum,
-        minima ipsa cupiditate illum odit maxime error nemo quam accusamus.
-        Laborum assumenda esse adipisci magnam recusandae, aperiam libero
-        cupiditate corporis doloremque. Illum quaerat provident praesentium
-        culpa quam dolorem dolore quia dolores tenetur sapiente vel blanditiis
-        veniam mollitia nemo, voluptatibus amet! Ullam, sunt. Nam magnam nulla
-        corrupti repudiandae esse quod blanditiis repellat ducimus consequatur.
-        Officia ratione corporis cumque cupiditate, dolores neque numquam
-        explicabo quis consequatur dolorum delectus laudantium sit sed excepturi
-        a voluptas minus iure esse perferendis tempora quam quisquam! Ut vel
-        harum odio vero molestias consectetur quod. Id a enim vero dolorem.
-        Distinctio ipsam maiores qui. Expedita repellat repudiandae praesentium
-        impedit, veritatis vitae quia non fuga aut, laudantium nemo nisi
-        provident blanditiis corporis architecto vel cupiditate accusamus
-        consequatur sint omnis ipsum. Neque, excepturi deleniti deserunt nam
-        officiis, vel praesentium, culpa officia ea mollitia nostrum. Numquam
-        fugit quidem possimus provident non architecto officiis! Reprehenderit,
-        assumenda atque vel possimus inventore quo rerum! Esse adipisci
-        perferendis itaque temporibus ut quae rem autem sint alias similique
-        repudiandae eius nulla velit facilis, qui repellat ratione quisquam
-        nihil blanditiis. Assumenda obcaecati, adipisci modi enim quia
-        blanditiis ducimus sed incidunt nostrum iusto sint voluptas accusantium
-        rem ipsum autem harum doloremque explicabo! Tenetur dolore, similique
-        maxime voluptates obcaecati, quis sunt iure veritatis provident, tempora
-        numquam labore expedita molestiae culpa harum dolorum iusto possimus
-        consequatur nulla fugiat nihil ratione beatae cumque. Animi atque eius
-        iure dolore recusandae accusantium fugit ducimus deserunt! Corrupti eum
-        sapiente ratione? Error accusamus ad eligendi quia vero reprehenderit,
-        modi natus ratione esse inventore sequi sed deleniti ex hic dolores quas
-        voluptas officia fugit! Quisquam nihil ipsa praesentium nam nulla
-        assumenda? Veniam, natus accusamus illum labore asperiores quo quos
-        explicabo eligendi, et, ratione nostrum rem facere. Ab nesciunt at
-        officiis veritatis, libero facere voluptate natus, autem aliquid magnam
-        tempora recusandae quod consectetur iusto amet impedit quaerat vero
-        reiciendis accusantium perferendis excepturi. Quas fugit vel consectetur
-        eaque? Neque accusamus hic dolore facere ipsam omnis error, iusto
-        obcaecati, consectetur atque corporis distinctio! Libero quam
-        exercitationem nisi dolor nostrum cupiditate pariatur, maxime, non
-        aliquid id cumque aut in fugiat eum ipsa, harum fugit sed ea quia ut
-        nam. Unde facilis eius dolorum optio itaque quaerat quidem reiciendis
-        minima quae incidunt quos veritatis, dolor voluptas, beatae voluptate
-        exercitationem! Enim modi tempora officia, autem velit sapiente, animi
-        tenetur accusantium fugiat voluptatem quidem. Vel similique vitae est
-        aut accusamus. Error debitis nam repellendus officia porro quo similique
-        velit necessitatibus beatae harum dolore quidem, iste cumque esse in
-        totam odit odio sequi rerum consequatur libero nobis autem! Perferendis,
-        magnam. Saepe adipisci numquam nostrum recusandae optio placeat veniam
-        error consectetur sit ipsum praesentium esse, maxime natus incidunt
-        inventore modi, quibusdam fuga alias repellat, vel dicta delectus quod
-        perferendis ratione? Eaque nemo laborum quasi necessitatibus vel quidem
-        consequuntur est consequatur animi. Esse deleniti possimus eos delectus
-        tempora dolorum quam tenetur aspernatur repellendus aliquid qui facere,
-        ratione dicta minima tempore odio impedit eveniet suscipit cupiditate
-        temporibus at. Vitae ipsum sint repellendus a, perspiciatis sequi unde
-        expedita, modi commodi velit cumque totam est quam amet necessitatibus
-        reprehenderit debitis error ullam. Omnis illum debitis eaque fuga,
-        blanditiis delectus nulla quisquam dolores obcaecati ipsum laboriosam
-        soluta numquam laborum.
-      </p>
+      <div className={style.container}>
+        <div>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
+          </div>
+          <Feature />
+        </div>
+        <div>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
+          </div>
+          <Course />
+        </div>
+        <div className={style.form}>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
+          </div>
+          <form action="#">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </form>
+        </div>
+        <div>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
+          </div>
+          <Trainer />
+        </div>
+        <div className={style.container__events}>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
+          </div>
+          <Events />
+        </div>
+        <div>
+          <div className={style.container__title}>
+            <h1>Awesome Feature</h1>
+            <p>Replenish man have thing gathering lights yielding shall you</p>
+          </div>
+          <Client />
+        </div>
+      </div>
     </>
   );
 }

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  &:last-child {
+    margin-bottom: 150px;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  &__title {
+    h1 {
+      font-size: 36px;
+      line-height: 30px;
+      font-weight: bold;
+      color: rgb(0, 35, 71);
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-style: italic;
+      color: rgb(123, 131, 138);
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
