@@ -1,4 +1,5 @@
 .context {
+  padding: 0 12%;
   width: 100%;
   height: 120vh;
   display: flex;
@@ -8,15 +9,89 @@
   gap: 20px;
   background-size: cover;
   background-position: top;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
 }
-.context {
-  width: 100%;
-  height: 120vh;
+.box_button {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-size: cover;
-  background-position: top;
+  flex-wrap: wrap;
+}
+.blue {
+  display: inline-block;
+  background: #002347;
+
+  color: #fdc632;
+  font-size: 13px;
+  font-weight: 500;
+  // line-height: 48px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  // cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #002347;
+    color: #002347;
+  }
+  a {
+    display: inline-block;
+    padding: 16px 48px;
+  }
+}
+.gold {
+  display: inline-block;
+  background: #fdc632;
+  color: #002347;
+  font-size: 13px;
+  font-weight: 500;
+  // line-height: 48px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  // cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: #002347;
+    border: 1px solid #002347;
+    color: #fdc632;
+  }
+  a {
+    display: inline-block;
+    padding: 16px 48px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .context {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .box_button {
+    gap: 4px;
+  }
 }

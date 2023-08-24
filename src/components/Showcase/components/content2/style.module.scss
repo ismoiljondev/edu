@@ -1,6 +1,8 @@
 .context {
+  padding: 0 12%;
+
   width: 100%;
-  height: 120vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,4 +11,12 @@
   background-size: cover;
   background-position: top;
   background-color: red;
+  color: white;
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
 }

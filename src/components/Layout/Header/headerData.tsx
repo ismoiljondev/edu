@@ -17,12 +17,12 @@ export const HeaderRouteData: Header_route_type = {
     {
       id: 1,
       name: "About",
-      url: "/",
+      url: "/about",
     },
     {
       id: 1,
       name: "Contact",
-      url: "/",
+      url: "/contact",
     },
   ],
   //   -------------------------------------------------------------------------------

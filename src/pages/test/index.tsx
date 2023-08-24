@@ -4,7 +4,7 @@ import ShowcaseData from "@/components/Showcase/showData";
 function Test() {
   return (
     <div>
-      <Showcase data={ShowcaseData} />
+      <Showcase />
 
       <h2>Lorem, ipsum.</h2>
       <p>

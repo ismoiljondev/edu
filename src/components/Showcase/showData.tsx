@@ -11,9 +11,20 @@ type homeData = {
   background_img: string;
   button: buttonType;
 };
+type homeBeadecData = {
+  name: string;
+  url: string;
+};
+type homeDataTwo = {
+  aboutUs: homeBeadecData;
+  contactUs: homeBeadecData;
+  testUs: homeBeadecData;
+  background_img: string;
+};
 
 type showcaseDataType = {
   homeData: homeData;
+  homeDataTwo: homeDataTwo;
 };
 
 const ShowcaseData: showcaseDataType = {
@@ -24,17 +35,32 @@ const ShowcaseData: showcaseDataType = {
     button: [
       {
         id: 0,
-        text: "SEE COURSE",
+        text: "LEARN MORE",
         style: "blue",
         url: "/",
       },
       {
-        id: 0,
+        id: 1,
         text: "SEE COURSE",
         style: "gold",
         url: "/",
       },
     ],
+  },
+  homeDataTwo: {
+    aboutUs: {
+      name: "About Us",
+      url: "/abaut",
+    },
+    contactUs: {
+      name: "Contact Us",
+      url: "/contact",
+    },
+    testUs: {
+      name: "Test Us",
+      url: "/test",
+    },
+    background_img: "/media/banner.jpg.webp",
   },
 };
 
