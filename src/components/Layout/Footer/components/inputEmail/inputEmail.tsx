@@ -2,12 +2,13 @@ import style from "@/components/Layout/Footer/components/inputEmail/inputEmail.m
 import React from "react";
 
 function InputEmail() {
-  function OnSubmit(e: any) {
+  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
   }
   return (
     <div className={style.inputEmail}>
-      <form action="#" onSubmit={(e) => OnSubmit(e)}>
+      <div className={style.bac_div}></div>
+      <form action="#" onSubmit={(e) => onSubmit(e)}>
         <input
           type="email"
           name="email"

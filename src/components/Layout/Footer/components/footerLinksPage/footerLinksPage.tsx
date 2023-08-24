@@ -17,14 +17,14 @@ function FooterLinksPage(props: PropsType) {
 
   return (
     <div className={style.footer_left}>
-      {data.map((e) => {
+      {data.map((e, i) => {
         return (
-          <div className={style.footer_left_box}>
+          <div className={style.footer_left_box} key={i}>
             <h3>{e.categories}</h3>
             <ul className={style.footer_left_box_ul}>
-              {e.data.map((li) => {
+              {e.data.map((li, j) => {
                 return (
-                  <li key={li.id}>
+                  <li key={j}>
                     <LinkDirectin id={li.id} name={li.name} url={`${li.url}`} />
                   </li>
                 );

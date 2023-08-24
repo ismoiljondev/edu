@@ -16,9 +16,15 @@ function Menu(props: menuPtopsType) {
 
   return (
     <div className={style.menu}>
-      {data.map((e) => {
+      {data.map((e, i) => {
         return (
-          <LinkMenu linkType={menuType} id={e.id} name={e.name} url={e.url} />
+          <LinkMenu
+            linkType={menuType}
+            id={e.id}
+            name={e.name}
+            url={e.url}
+            key={i}
+          />
         );
       })}
     </div>

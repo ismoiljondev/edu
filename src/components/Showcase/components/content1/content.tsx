@@ -15,10 +15,10 @@ function Content1(props: ContentPropsType) {
       <h2>{data.homeData.title_bir}</h2>
       <h1>{data.homeData.title_big}</h1>
       <div className={style.box_button}>
-        {data.homeData.button.map((e) => {
+        {data.homeData.button.map((e, i) => {
           const type = style[e.style];
           return (
-            <button className={type}>
+            <button className={type} key={i}>
               <Link href={e.url}>{e.text}</Link>
             </button>
           );

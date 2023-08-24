@@ -19,13 +19,13 @@ function FooterNewsletterLink(props: PrpsType) {
   return (
     <div className={style.footer_top_right}>
       <div>
-        {data.map((e) => {
+        {data.map((e, i) => {
           return (
-            <div className={style.footer_top_right_box}>
+            <div className={style.footer_top_right_box} key={i}>
               <h3>{e.categories}</h3>
               <ul className={style.footer_top_right_box_ul}>
-                {e.data.map((li) => {
-                  return <li key={li.id}>{li.name}</li>;
+                {e.data.map((li, j) => {
+                  return <li key={j}>{li.name}</li>;
                 })}
               </ul>
             </div>

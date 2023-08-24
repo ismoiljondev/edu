@@ -18,9 +18,9 @@ function FooterNetLinks(props: PropsType) {
   return (
     <div className={style.footer_right}>
       <ul className={style.footer_right_ul}>
-        {data.map((net) => {
+        {data.map((net, i) => {
           return (
-            <li key={net.id}>
+            <li key={i}>
               <Link href={net.url}>{net.icon}</Link>
             </li>
           );

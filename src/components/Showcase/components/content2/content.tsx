@@ -36,8 +36,7 @@ function Content2(props: content2) {
     >
       <h1>{pagesName}</h1>
       <h3>
-        <Link href={"/"}>Home </Link> /{" "}
-        <Link href={pagesUrl}>{`${pagesName}`}</Link>
+        <Link href={"/"}>Home </Link> / <Link href={pagesUrl}>{pagesName}</Link>
       </h3>
     </div>
   );
