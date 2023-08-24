@@ -1,6 +1,7 @@
 import { AboutCard, Client, Feature } from "@/sections";
 import Head from "next/head";
 import style from "./style/style.module.scss";
+import Showcase from "@/components/Showcase";
 export default function About() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.sections}>
+        <Showcase />
         <div className={style.container}>
           <AboutCard />
         </div>

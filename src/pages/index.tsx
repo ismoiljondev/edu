@@ -11,8 +11,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Showcase />
       <div className={style.elements}>
+        <Showcase />
         <div className={style.feature}>
           <div className={style.container}>
             <div className={style.container__title}>
