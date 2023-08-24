@@ -1,8 +1,8 @@
-import style from "@/components/Showcase/sass/style.module.scss";
+import style from "@/components/Showcase/components/content2/style.module.scss";
 
 function Content2() {
   return (
-    <div>
+    <div className={style.context}>
       <h1>Showcase2</h1>
     </div>
   );

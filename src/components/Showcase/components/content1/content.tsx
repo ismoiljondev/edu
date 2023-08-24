@@ -1,13 +1,16 @@
-import style from "@/components/Showcase/sass/style.module.scss";
+import style from "@/components/Showcase/components/content1/style.module.scss";
 type ContentPropsType = {
   data: any;
 };
 function Content1(props: ContentPropsType) {
   const { data } = props;
-  console.log(data);
+  console.log(data.background_img, "img");
 
   return (
-    <div>
+    <div
+      className={style.context}
+      style={{ backgroundImage: `url(${data.background_img})` }}
+    >
       <h1>Showcase1</h1>
     </div>
   );

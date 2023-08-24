@@ -1,4 +1,4 @@
-import ShowcaseData from "@/components/Showcase/showData";
+import style from "@/components/Showcase/style.module.scss";
 import showcaseDataType from "@/components/Showcase/showDataType";
 import Content1 from "@/components/Showcase/components/content1";
 import Content2 from "@/components/Showcase/components/content2";
@@ -11,7 +11,6 @@ type ShowcasePropsType = {
 
 function Showcase(props: ShowcasePropsType) {
   const { data } = props;
-  console.log(data);
 
   const [isSowStyle, setIsShowStyle] = useState<boolean>(true);
   const router = useRouter();
@@ -23,7 +22,9 @@ function Showcase(props: ShowcasePropsType) {
   }, [router.pathname]);
 
   return (
-    <div>{isSowStyle ? <Content1 data={data.homeData} /> : <Content2 />}</div>
+    <div className={style.showcase}>
+      {isSowStyle ? <Content1 data={data.homeData} /> : <Content2 />}
+    </div>
   );
 }
 

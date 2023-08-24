@@ -20,7 +20,7 @@ const ShowcaseData: showcaseDataType = {
   homeData: {
     title_bir: "BEST ONLINE EDUCATION SERVICE IN THE WORLD",
     title_big: "ONE STEP AHEAD THIS SEASON",
-    background_img: "",
+    background_img: "/media/home-banner.jpg.webp",
     button: [
       {
         id: 0,
