@@ -31,7 +31,7 @@ export const cardElement = [
     buttonText: "DESIGN",
   },
   {
-    id: 5,
+    id: 4,
     img: "/media/first.webp",
     price: 25,
     title: "Compyuter Engineering",
@@ -41,7 +41,7 @@ export const cardElement = [
     buttonText: "DESIGN",
   },
   {
-    id: 4,
+    id: 5,
     img: "/media/second.webp",
     price: 25,
     title: "Social Media Network",
@@ -51,7 +51,7 @@ export const cardElement = [
     buttonText: "DESIGN",
   },
   {
-    id: 3,
+    id: 6,
     img: "/media/third.webp",
     price: 25,
     title: "Social Media Network",
